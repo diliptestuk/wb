@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/styles/style.css' />
+    <link rel='stylesheet' href='/styles/mystyle.css' />
+  </head>
+  <body>
+    <header>
+      <h3><%= title %> to Collaborative Whiteboard</h3>
+    </header>
+    <section>
+      <nav>
+        <label>User Lists</label>
+        <ol type='circle' class="userList" id="userList">
+        </ol>
+      </nav>
+      <article>
+        <div class="flex-container">
+        <div>
+          <canvas id="white_board" width="800" height="500"></canvas>
+        </div>
+      </div>
+      </article>
+      <nav>
+        <label>Tools</label>
+        <ul type='circle' class="userList" id="userList">
+        <li class="round-button" >
+          <button id='btn-download'>Save</button>
+        </li>
+        <li class="round-button red selected"onclick="pick_color('red')"></li> 
+        <li class="round-button green" onclick="pick_color('green')"></li>
+        <li class="round-button blue" onclick="pick_color('blue')"></li>
+        <li class="round-button" >
+          <button id="clearboard">Clear</button>
+        </li>
+        </ul>
+      </nav>
+    </section>
+    <footer>
+      <p>Whiteboard@2020 version1</p>
+    </footer>
+  </body>
+  <script src="/scripts/connection.js"></script>
+  <script src="/scripts/play.js"></script>
+</html>

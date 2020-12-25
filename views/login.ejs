@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/styles/style.css' />
+  </head>
+  <body>
+    <div class="row justify-content-md-center" style="margin-top: 100px">
+      <h1 style="text-align: center;"><%= title %>: <%= message  %></h1>
+        <form method="POST" action="/login">
+          <div class="imgcontainer">
+            <img src="/images/loginusers.png" style="width:20%;" alt="Avatar" class="avatar">
+          </div>
+          <div>
+            <label>Email: join@whiteboard.com</label><br />
+            <label>Password: leuni123</label>
+          </div>
+          <div class="container">
+            <label for="uname"><b>User Email-Id</b></label>
+            <input type="text" placeholder="Please Enter Email-Id" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Please Enter Password" name="password" required>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <span class="psw"><a href="#"></a></span>
+          </div>
+        </form>
+    </div>
+  </body>
+</html>

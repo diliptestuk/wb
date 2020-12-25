@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0d73bb;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0d73bb;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+  </head>
+  <body>
+
+    <!-- <div class="flex-container">
+      <div></div>
+    </div> -->
+
+    <header>
+      <h3><%= title %> to Collaborative Whiteboard</h3>
+    </header>
+
+    <section>
+      <!-- <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav> -->
+      
+      <article style="width:100%";>
+        <h1 style="text-align: center;">Collaborative Whiteboard</h1>
+        <p>Shared visual workspaces that provide a rich, digital equivalent to analogue whiteboards are collaborative whiteboards. They allow cooperative interaction, which includes communication channels, file sharing, media access and templated presentation, beyond drawing and writing metaphors.</p>
+        <p>The leading solutions, such as commenting, chatting, @-mentioning and video conferencing, go far beyond shared drawings on a digital canvas to leverage social communications found in other job technologies. These collaborative whiteboards also have advanced integrations with other enterprise software, particularly apps for file sharing, productivity tools, and solutions for work management.</p>
+        <p>To Use the whiteboard please click here <a href="/board">Whiteboard</a><p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Whiteboard@2020 version1</p>
+    </footer>
+
+ 
+    
+  </body>
+
+</html>

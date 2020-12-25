@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/4dce71b2-a7f5-46de-93eb-5432614ee355/resourceGroups/WHITEBOARD/providers/Microsoft.Web/sites/wbappv1",
+    "appService.deploySubpath": "."
+}
